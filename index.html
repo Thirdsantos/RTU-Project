@@ -6,30 +6,66 @@
   <title>Brillara</title>
 
   <link rel="icon" href="favicon.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Heroicons CDN for cart icon -->
   <script src="https://unpkg.com/feather-icons"></script>
+  
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      scroll-behavior: smooth;
+    }
+    
+    .gradient-overlay {
+      background: linear-gradient(135deg, rgba(30, 64, 175, 0.95), rgba(30, 64, 175, 0.7));
+    }
+    
+    .shadow-custom {
+      box-shadow: 0 10px 25px -5px rgba(30, 64, 175, 0.1), 0 10px 10px -5px rgba(30, 64, 175, 0.04);
+    }
+    
+    .input-focus:focus {
+      box-shadow: 0 0 0 3px rgba(255, 202, 40, 0.3);
+    }
+    
+    .benefit-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    @keyframes subtle-glow {
+      0%, 100% { box-shadow: 0 0 15px rgba(255, 202, 40, 0.2); }
+      50% { box-shadow: 0 0 25px rgba(255, 202, 40, 0.4); }
+    }
+    
+    .cta-button {
+      transition: all 0.3s ease;
+    }
+    
+    .cta-button:hover {
+      animation: subtle-glow 2s infinite;
+    }
+  </style>
 </head>
-<body>
-  <nav class="bg-white shadow-md sticky top-0 z-50">
+<body class="text-gray-800">
+  <nav class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center">
     <!-- LOGO (left) -->
-    <h1 class="text-3xl font-bold">
+    <h1 class="text-3xl font-extrabold tracking-tight">
       <span class="text-blue-800">BRIL</span><span class="text-yellow-400">LARA</span>
     </h1>
 
-
       <!-- NAV LINKS (right) -->
-      <ul class="hidden md:flex ml-auto space-x-8 font-medium text-lg text-gray-700 items-center">
-        <li><a href="#home" class="hover:text-blue-800">Home</a></li>
-        <li><a href="#benefits" class="hover:text-blue-800">Benefits</a></li>
-        <li><a href="#" class="hover:text-blue-800">Products</a></li>
-        <li><a href="#" class="hover:text-blue-800">Testimonials</a></li>
-        <li><a href="#contact" class="hover:text-blue-800">Contact</a></li> <!-- Updated Contact link -->
+      <ul class="hidden md:flex ml-auto space-x-10 font-medium text-lg text-gray-700 items-center">
+        <li><a href="#home" class="hover:text-blue-800 transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-800 hover:after:w-full after:transition-all">Home</a></li>
+        <li><a href="#benefits" class="hover:text-blue-800 transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-800 hover:after:w-full after:transition-all">Benefits</a></li>
+        <li><a href="#" class="hover:text-blue-800 transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-800 hover:after:w-full after:transition-all">Products</a></li>
+        <li><a href="#" class="hover:text-blue-800 transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-800 hover:after:w-full after:transition-all">Testimonials</a></li>
+        <li><a href="#contact" class="hover:text-blue-800 transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-800 hover:after:w-full after:transition-all">Contact</a></li>
         <li>
-          <a href="#payment" class="flex items-center space-x-2 bg-blue-800 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-900 transition">
+          <a href="#payment" class="flex items-center space-x-2 bg-blue-800 text-white px-6 py-2.5 rounded-full font-semibold hover:bg-blue-900 transition-all duration-300 shadow-lg hover:shadow-xl cta-button">
             <i data-feather="shopping-cart" class="w-5 h-5"></i>
             <span>Buy Now</span>
           </a>
@@ -39,84 +75,85 @@
   </nav>
 
 <!-- Home Section -->
-<section class="bg-[url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center min-h-screen flex items-center relative">
-  <div class="absolute inset-0 bg-black/30"></div>
+<section class="bg-[url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center min-h-screen flex items-center relative" id="home">
+  <div class="absolute inset-0 bg-gradient-to-r from-black/40 to-black/20"></div>
   <div class="max-w-7xl mx-auto px-6 flex flex-col-reverse md:flex-row items-center gap-12 relative z-10">
-    <div class="md:w-1/2 bg-white/90 p-8 rounded-xl backdrop-blur-sm">
-      <h2 class="text-4xl font-extrabold text-blue-800 mb-4">
-        Light Up Your Life with <span class="text-yellow-400"></span>
+    <div class="md:w-1/2 bg-white/95 p-10 rounded-xl backdrop-blur-sm shadow-custom">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-blue-800 mb-4 leading-tight">
+        Light Up Your Life with <span class="text-yellow-400"></span></span>
       </h2>
       <img src="home.png" alt="SoLight Home" class="w-auto h-200 mb-6" />
-      <p class="text-lg text-gray-700 mb-6">
+      <p class="text-lg text-gray-700 mb-8 leading-relaxed">
         Discover innovative lighting solutions that brighten your space and uplift your mood. Reliable. Stylish. Energy-efficient.
       </p>
-      <a href="#payment" class="inline-flex items-center space-x-2 bg-blue-800 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-900 transition">
+      <a href="#payment" class="inline-flex items-center space-x-2 bg-blue-800 text-white px-7 py-3.5 rounded-full font-semibold hover:bg-blue-900 transition-all duration-300 shadow-lg hover:shadow-xl cta-button">
         <i data-feather="shopping-cart" class="w-5 h-5"></i>
         <span>Buy Now</span>
       </a>
     </div>
     <div class="md:w-1/2">
-      <img src="https://via.placeholder.com/500x300" alt="SoLight product" class="w-full rounded-xl shadow-xl border-4 border-white" />
+      <img src="https://via.placeholder.com/500x300" alt="SoLight product" class="w-full rounded-xl shadow-2xl border-4 border-white" />
     </div>
   </div>
 </section>
 
 
   <!-- Benefits Section -->
-  <section class="py-16 bg-gradient-to-b from-blue-50 to-white" id="benefits">
+  <section class="py-24 bg-gradient-to-b from-blue-50 to-white" id="benefits">
     <div class="max-w-7xl mx-auto px-6 text-center">
-      <h2 class="text-4xl font-extrabold text-blue-800 mb-12">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-blue-800 mb-4">
         Why Choose <span class="text-yellow-400">SoLight?</span>
       </h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-yellow-400 transition transform hover:scale-[1.02] hover:shadow-xl">
-          <div class="mb-6 text-yellow-400">
-            <i data-feather="sun" class="w-12 h-12 mx-auto"></i>
+      <p class="text-lg text-gray-600 mb-16 max-w-3xl mx-auto">Our innovative lighting solutions are designed with your needs in mind, providing exceptional performance and reliability.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-yellow-400 transition duration-300 benefit-card">
+          <div class="mb-6 text-yellow-400 bg-yellow-50 w-20 h-20 rounded-full flex items-center justify-center mx-auto">
+            <i data-feather="sun" class="w-10 h-10"></i>
           </div>
           <h3 class="text-2xl font-semibold mb-4">Solar-Powered & Energy Efficient</h3>
           <p class="text-gray-600">Uses solar energy for charging, cutting electricity costs and reducing carbon footprint.</p>
         </div>
 
         <!-- Benefit 2 -->
-        <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-blue-600 transition transform hover:scale-[1.02] hover:shadow-xl">
-          <div class="mb-6 text-blue-800">
-            <i data-feather="star" class="w-12 h-12 mx-auto"></i>
+        <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-blue-600 transition duration-300 benefit-card">
+          <div class="mb-6 text-blue-800 bg-blue-50 w-20 h-20 rounded-full flex items-center justify-center mx-auto">
+            <i data-feather="star" class="w-10 h-10"></i>
           </div>
           <h3 class="text-2xl font-semibold mb-4">Adaptive Brightness Control</h3>
           <p class="text-gray-600">Auto-adjusts brightness to save energy and improve visibility based on environmental conditions.</p>
         </div>
 
         <!-- Benefit 3 -->
-        <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-green-500 transition transform hover:scale-[1.02] hover:shadow-xl">
-          <div class="mb-6 text-green-400">
-            <i data-feather="check-circle" class="w-12 h-12 mx-auto"></i>
+        <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-green-500 transition duration-300 benefit-card">
+          <div class="mb-6 text-green-500 bg-green-50 w-20 h-20 rounded-full flex items-center justify-center mx-auto">
+            <i data-feather="check-circle" class="w-10 h-10"></i>
           </div>
           <h3 class="text-2xl font-semibold mb-4">Emergency SOS & Power Reserve</h3>
           <p class="text-gray-600">Features motion-activated lighting, low-battery power saving, and SOS flashing mode for emergencies.</p>
         </div>
 
         <!-- Benefit 4 -->
-        <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-purple-600 transition transform hover:scale-[1.02] hover:shadow-xl">
-          <div class="mb-6 text-purple-600">
-            <i data-feather="clock" class="w-12 h-12 mx-auto"></i>
+        <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-purple-600 transition duration-300 benefit-card">
+          <div class="mb-6 text-purple-600 bg-purple-50 w-20 h-20 rounded-full flex items-center justify-center mx-auto">
+            <i data-feather="clock" class="w-10 h-10"></i>
           </div>
           <h3 class="text-2xl font-semibold mb-4">Long-Lasting & Weather-Resistant</h3>
           <p class="text-gray-600">Up to 72 hours of light and built to withstand rain and typhoons, making it perfect for outdoor use.</p>
         </div>
 
         <!-- Benefit 5 -->
-        <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-red-500 transition transform hover:scale-[1.02] hover:shadow-xl">
-          <div class="mb-6 text-red-600">
-            <i data-feather="zap" class="w-12 h-12 mx-auto"></i>
+        <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-red-500 transition duration-300 benefit-card">
+          <div class="mb-6 text-red-600 bg-red-50 w-20 h-20 rounded-full flex items-center justify-center mx-auto">
+            <i data-feather="zap" class="w-10 h-10"></i>
           </div>
           <h3 class="text-2xl font-semibold mb-4">Fast Charging</h3>
           <p class="text-gray-600">SoLight offers fast charging and long-lasting brightness, ensuring you get the most out of every usage.</p>
         </div>
 
         <!-- Benefit 6 -->
-        <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-indigo-600 transition transform hover:scale-[1.02] hover:shadow-xl">
-          <div class="mb-6 text-indigo-600">
-            <i data-feather="cloud" class="w-12 h-12 mx-auto"></i>
+        <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-indigo-600 transition duration-300 benefit-card">
+          <div class="mb-6 text-indigo-600 bg-indigo-50 w-20 h-20 rounded-full flex items-center justify-center mx-auto">
+            <i data-feather="cloud" class="w-10 h-10"></i>
           </div>
           <h3 class="text-2xl font-semibold mb-4">Smart Connectivity</h3>
           <p class="text-gray-600">Control your lights remotely via mobile apps or smart home systems, making it easier than ever to adjust your lighting.</p>
@@ -126,20 +163,20 @@
   </section>
 
 <!-- Payment Section -->
-<section class="py-16 bg-gray-100 pattern-dots-md gray-200/20" id="payment">
+<section class="py-20 bg-gray-100" id="payment">
   <div class="max-w-7xl mx-auto px-6">
-    <h2 class="text-4xl font-extrabold text-blue-800 mb-8">Secure Payment</h2>
-    <p class="text-lg text-gray-700 mb-12">Fill out the form below to complete your purchase.</p>
+    <h2 class="text-4xl md:text-5xl font-extrabold text-blue-800 mb-4 text-center">Secure Payment</h2>
+    <p class="text-lg text-gray-700 mb-16 text-center max-w-3xl mx-auto">Fill out the form below to complete your purchase with our secure payment system.</p>
 
     <!-- Product Selection and Quantity -->
-    <div class="bg-white p-8 rounded-xl shadow-lg mb-8 border-l-4 border-blue-600">
+    <div class="bg-white p-10 rounded-xl shadow-lg mb-10 border-l-4 border-blue-600">
       <h3 class="text-2xl font-semibold text-blue-800 mb-6">Select Product and Quantity</h3>
       <form action="#" method="POST" class="space-y-6">
         <div class="flex flex-col md:flex-row justify-between gap-6">
           <!-- Product Selection -->
           <div class="flex-1">
-            <label for="product" class="block text-lg font-medium text-gray-700">Product</label>
-            <select id="product" name="product" class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:outline-none">
+            <label for="product" class="block text-lg font-medium text-gray-700 mb-2">Product</label>
+            <select id="product" name="product" class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:outline-none shadow-sm">
               <option value="so-light-1">SoLight Classic</option>
               <option value="so-light-2">SoLight Premium</option>
               <option value="so-light-3">SoLight Pro</option>
@@ -147,59 +184,59 @@
           </div>
           <!-- Quantity Selection -->
           <div class="flex-1">
-            <label for="quantity" class="block text-lg font-medium text-gray-700">Quantity</label>
-            <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:outline-none" />
+            <label for="quantity" class="block text-lg font-medium text-gray-700 mb-2">Quantity</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:outline-none shadow-sm" />
           </div>
         </div>
       </form>
     </div>
 
     <!-- Billing Information -->
-    <div class="bg-white p-8 rounded-xl shadow-lg mb-8 border-l-4 border-green-500">
+    <div class="bg-white p-10 rounded-xl shadow-lg mb-10 border-l-4 border-green-500">
       <h3 class="text-2xl font-semibold text-blue-800 mb-6">Billing Information</h3>
       <form action="#" method="POST" class="space-y-6">
         <div class="flex flex-col md:flex-row justify-between gap-6">
           <!-- Name -->
           <div class="flex-1">
-            <label for="name" class="block text-lg font-medium text-gray-700">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="John Doe" required class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:outline-none" />
+            <label for="name" class="block text-lg font-medium text-gray-700 mb-2">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:outline-none shadow-sm" />
           </div>
           <!-- Email -->
           <div class="flex-1">
-            <label for="email" class="block text-lg font-medium text-gray-700">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="youremail@example.com" required class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:outline-none" />
+            <label for="email" class="block text-lg font-medium text-gray-700 mb-2">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="youremail@example.com" required class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:outline-none shadow-sm" />
           </div>
         </div>
 
         <div>
-          <label for="address" class="block text-lg font-medium text-gray-700">Shipping Address</label>
-          <input type="text" id="address" name="address" placeholder="123 Main St, City, Country" required class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:outline-none" />
+          <label for="address" class="block text-lg font-medium text-gray-700 mb-2">Shipping Address</label>
+          <input type="text" id="address" name="address" placeholder="123 Main St, City, Country" required class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:outline-none shadow-sm" />
         </div>
       </form>
     </div>
 
     <!-- Payment Method -->
-    <div class="bg-white p-8 rounded-xl shadow-lg mb-8 border-l-4 border-yellow-400">
+    <div class="bg-white p-10 rounded-xl shadow-lg mb-10 border-l-4 border-yellow-400">
       <h3 class="text-2xl font-semibold text-blue-800 mb-6">Payment Method</h3>
       <form action="#" method="POST" class="space-y-6">
         <div class="flex flex-col md:flex-row justify-between gap-6">
           <!-- Credit Card -->
           <div class="flex-1">
-            <label for="card-number" class="block text-lg font-medium text-gray-700">Credit Card Number</label>
-            <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9876 5432" required class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:outline-none" />
+            <label for="card-number" class="block text-lg font-medium text-gray-700 mb-2">Credit Card Number</label>
+            <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9876 5432" required class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:outline-none shadow-sm" />
           </div>
         </div>
 
         <div class="flex flex-col md:flex-row justify-between gap-6">
           <!-- Expiry Date -->
           <div class="flex-1">
-            <label for="expiry" class="block text-lg font-medium text-gray-700">Expiry Date</label>
-            <input type="month" id="expiry" name="expiry" required class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:outline-none" />
+            <label for="expiry" class="block text-lg font-medium text-gray-700 mb-2">Expiry Date</label>
+            <input type="month" id="expiry" name="expiry" required class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:outline-none shadow-sm" />
           </div>
           <!-- CVV -->
           <div class="flex-1">
-            <label for="cvv" class="block text-lg font-medium text-gray-700">CVV</label>
-            <input type="text" id="cvv" name="cvv" placeholder="123" required class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:outline-none" />
+            <label for="cvv" class="block text-lg font-medium text-gray-700 mb-2">CVV</label>
+            <input type="text" id="cvv" name="cvv" placeholder="123" required class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:outline-none shadow-sm" />
           </div>
         </div>
       </form>
@@ -207,7 +244,7 @@
 
     <!-- Confirm Payment -->
     <div class="text-center">
-      <button type="submit" class="bg-blue-800 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-900 transition shadow-lg hover:shadow-xl">
+      <button type="submit" class="bg-blue-800 text-white px-10 py-4 rounded-full font-semibold hover:bg-blue-900 transition-all duration-300 shadow-lg hover:shadow-xl cta-button">
         Complete Payment
       </button>
     </div>
@@ -215,30 +252,30 @@
 </section>
 
   <!-- Contact Section with location and social media -->
-  <section class="bg-gradient-to-br from-blue-800 to-blue-600 py-16 text-white relative overflow-hidden" id="contact">
+  <section class="bg-gradient-to-br from-blue-800 to-blue-600 py-20 text-white relative overflow-hidden" id="contact">
     <div class="absolute inset-0 opacity-10">
       <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop')] bg-cover bg-center"></div>
     </div>
     <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10">
       <div>
-        <h2 class="text-4xl font-extrabold text-white mb-8">Get in Touch with Us</h2>
-        <p class="text-lg mb-12">We're here to answer any questions you may have. Reach out to us, and we'll get back to you as soon as possible.</p>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">Get in Touch with Us</h2>
+        <p class="text-lg mb-12 leading-relaxed">We're here to answer any questions you may have. Reach out to us, and we'll get back to you as soon as possible.</p>
 
         <!-- Contact Form -->
         <div class="flex justify-center">
-          <form action="#" method="POST" class="space-y-6 w-full md:w-3/4 lg:w-1/2 bg-white/20 p-8 rounded-xl shadow-lg backdrop-blur-sm border border-white/20">
+          <form action="#" method="POST" class="space-y-6 w-full md:w-3/4 lg:w-2/3 bg-white/20 p-8 rounded-xl shadow-lg backdrop-blur-sm border border-white/20">
             <div class="flex flex-col space-y-4">
               <div>
-                <input type="text" name="name" placeholder="Your Name" required class="w-full p-4 rounded-lg text-white placeholder-white/70 bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition" />
+                <input type="text" name="name" placeholder="Your Name" required class="w-full p-4 rounded-lg text-white placeholder-white/70 bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition-all duration-300 input-focus" />
               </div>
               <div>
-                <input type="email" name="email" placeholder="Your Email" required class="w-full p-4 rounded-lg text-white placeholder-white/70 bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition" />
+                <input type="email" name="email" placeholder="Your Email" required class="w-full p-4 rounded-lg text-white placeholder-white/70 bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition-all duration-300 input-focus" />
               </div>
               <div>
-                <textarea name="message" placeholder="Your Message" rows="4" required class="w-full p-4 rounded-lg text-white placeholder-white/70 bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition"></textarea>
+                <textarea name="message" placeholder="Your Message" rows="4" required class="w-full p-4 rounded-lg text-white placeholder-white/70 bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition-all duration-300 input-focus"></textarea>
               </div>
               <div>
-                <button type="submit" class="w-full bg-yellow-400 text-blue-800 px-6 py-3 rounded-full font-semibold hover:bg-yellow-500 transition shadow-md hover:shadow-lg">
+                <button type="submit" class="w-full bg-yellow-400 text-blue-800 px-6 py-3 rounded-full font-semibold hover:bg-yellow-500 transition-all duration-300 shadow-md hover:shadow-lg">
                   Send Message
                 </button>
               </div>
@@ -247,13 +284,19 @@
         </div>
 
         <!-- Telephone Number (random) -->
-        <p class="text-lg mt-8">Call us: <span id="phone-number" class="font-semibold">(02) 8532 1234</span></p>
+        <p class="text-lg mt-8 flex items-center justify-center md:justify-start">
+          <i data-feather="phone" class="w-5 h-5 mr-2 text-yellow-400"></i>
+          <span>Call us: <span id="phone-number" class="font-semibold">(02) 8532 1234</span></span>
+        </p>
       </div>
 
       <!-- Right side: Location with Google Map -->
       <div class="text-center md:text-left">
         <h3 class="text-2xl font-bold text-white mb-4">Our Location</h3>
-        <p class="text-lg text-white/90 mb-8">Rizal Technological University, Mandaluyong City, Philippines</p>
+        <p class="text-lg text-white/90 mb-8 flex items-center justify-center md:justify-start">
+          <i data-feather="map-pin" class="w-5 h-5 mr-2 text-yellow-400"></i>
+          Rizal Technological University, Mandaluyong City, Philippines
+        </p>
 
         <div class="mb-8 rounded-xl overflow-hidden shadow-xl border-4 border-white/20">
           <iframe 
@@ -266,14 +309,14 @@
           </iframe>
         </div>
 
-        <div class="flex justify-center space-x-6">
-          <a href="#" class="text-xl hover:text-yellow-400 transition">
+        <div class="flex justify-center md:justify-start space-x-6">
+          <a href="#" class="bg-white/20 hover:bg-white/30 w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 hover:text-yellow-400">
             <i data-feather="facebook" class="w-6 h-6"></i>
           </a>
-          <a href="#" class="text-xl hover:text-yellow-400 transition">
+          <a href="#" class="bg-white/20 hover:bg-white/30 w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 hover:text-yellow-400">
             <i data-feather="instagram" class="w-6 h-6"></i>
           </a>
-          <a href="#" class="text-xl hover:text-yellow-400 transition">
+          <a href="#" class="bg-white/20 hover:bg-white/30 w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 hover:text-yellow-400">
             <i data-feather="twitter" class="w-6 h-6"></i>
           </a>
         </div>
@@ -282,41 +325,50 @@
   </section>
 
 <!-- Footer Section -->
-<footer class="bg-gray-900 text-white py-12">
+<footer class="bg-gray-900 text-white py-16">
   <div class="max-w-7xl mx-auto px-6">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
       <!-- Company Info Column -->
       <div>
-        <h3 class="text-xl font-semibold mb-4 text-yellow-400">About Us</h3>
-        <p class="text-gray-400">We are a team of passionate innovators working to create smarter, more efficient solutions. Our goal is to drive positive change through technology.</p>
+        <h3 class="text-xl font-semibold mb-6 text-yellow-400 flex items-center">
+          <i data-feather="info" class="w-5 h-5 mr-2"></i>
+          About Us
+        </h3>
+        <p class="text-gray-400 leading-relaxed">We are a team of passionate innovators working to create smarter, more efficient solutions. Our goal is to drive positive change through technology.</p>
       </div>
 
       <!-- Contact Info Column -->
       <div>
-        <h3 class="text-xl font-semibold mb-4 text-yellow-400">Contact Us</h3>
-        <ul class="space-y-2">
+        <h3 class="text-xl font-semibold mb-6 text-yellow-400 flex items-center">
+          <i data-feather="message-square" class="w-5 h-5 mr-2"></i>
+          Contact Us
+        </h3>
+        <ul class="space-y-4">
           <li class="text-gray-400 flex items-center">
-            <i data-feather="mail" class="w-5 h-5 mr-2"></i>
-            <a href="mailto:brillarasolight@gmail.com" class="hover:text-white transition">brillarasolight@gmail.com</a>
+            <i data-feather="mail" class="w-5 h-5 mr-3 text-blue-400"></i>
+            <a href="mailto:brillarasolight@gmail.com" class="hover:text-white transition-colors duration-300">brillarasolight@gmail.com</a>
           </li>
           <li class="text-gray-400 flex items-center">
-            <i data-feather="phone" class="w-5 h-5 mr-2"></i>
-            <a href="tel:+639784561230" class="hover:text-white transition">09784561230</a>
+            <i data-feather="phone" class="w-5 h-5 mr-3 text-blue-400"></i>
+            <a href="tel:+639784561230" class="hover:text-white transition-colors duration-300">09784561230</a>
           </li>
         </ul>
       </div>
 
       <!-- Social Links Column -->
       <div>
-        <h3 class="text-xl font-semibold mb-4 text-yellow-400">Follow Us</h3>
+        <h3 class="text-xl font-semibold mb-6 text-yellow-400 flex items-center">
+          <i data-feather="users" class="w-5 h-5 mr-2"></i>
+          Follow Us
+        </h3>
         <div class="flex space-x-4">
-          <a href="#" class="bg-blue-700 hover:bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+          <a href="#" class="bg-blue-700 hover:bg-blue-600 w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl">
             <i data-feather="facebook" class="w-5 h-5"></i>
           </a>
-          <a href="#" class="bg-pink-600 hover:bg-pink-500 w-10 h-10 rounded-full flex items-center justify-center transition">
+          <a href="#" class="bg-pink-600 hover:bg-pink-500 w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl">
             <i data-feather="instagram" class="w-5 h-5"></i>
           </a>
-          <a href="#" class="bg-blue-400 hover:bg-blue-500 w-10 h-10 rounded-full flex items-center justify-center transition">
+          <a href="#" class="bg-blue-400 hover:bg-blue-500 w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl">
             <i data-feather="twitter" class="w-5 h-5"></i>
           </a>
         </div>
@@ -324,7 +376,7 @@
     </div>
 
     <!-- Footer Bottom Text -->
-    <div class="mt-12 text-center border-t border-gray-700 pt-6">
+    <div class="mt-16 text-center border-t border-gray-800 pt-8">
       <p class="text-sm text-gray-400">&copy; 2025 All Rights Reserved | Brillara Solutions</p>
     </div>
   </div>
@@ -333,6 +385,31 @@
   <!-- Feather Icons Script -->
   <script>
     feather.replace();
+    
+    // Add scroll behavior for navigation
+    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+    
+    // Add shadow to navigation on scroll
+    window.addEventListener('scroll', function() {
+      const nav = document.querySelector('nav');
+      if (window.scrollY > 10) {
+        nav.classList.add('shadow-lg');
+        nav.classList.add('py-3');
+        nav.classList.remove('py-4');
+      } else {
+        nav.classList.remove('shadow-lg');
+        nav.classList.add('py-4');
+        nav.classList.remove('py-3');
+      }
+    });
   </script>
 </body>
 </html>
