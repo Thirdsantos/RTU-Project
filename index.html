@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>SoLight</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Heroicons CDN for cart icon -->
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center">
+      <!-- LOGO (left) -->
+      <h1 class="text-3xl font-bold">
+        <span class="text-blue-800">So</span><span class="text-yellow-400">light</span>
+      </h1>
+
+      <!-- NAV LINKS (right) -->
+      <ul class="hidden md:flex ml-auto space-x-8 font-medium text-lg text-gray-700 items-center">
+        <li><a href="#home" class="hover:text-blue-800">Home</a></li>
+        <li><a href="#benefits" class="hover:text-blue-800">Benefits</a></li>
+        <li><a href="#" class="hover:text-blue-800">Products</a></li>
+        <li><a href="#" class="hover:text-blue-800">Testimonials</a></li>
+        <li><a href="#contact" class="hover:text-blue-800">Contact</a></li> <!-- Updated Contact link -->
+        <li>
+          <a href="#payment" class="flex items-center space-x-2 bg-blue-800 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-900 transition">
+            <i data-feather="shopping-cart" class="w-5 h-5"></i>
+            <span>Buy Now</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section class="bg-gray-50 min-h-screen flex items-center" id="home">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col-reverse md:flex-row items-center gap-12">
+      <div class="md:w-1/2">
+        <h2 class="text-4xl font-extrabold text-blue-800 mb-4">
+          Light Up Your Life with <span class="text-yellow-400">SoLight</span>
+        </h2>
+        <p class="text-lg text-gray-600 mb-6">
+          Discover innovative lighting solutions that brighten your space and uplift your mood. Reliable. Stylish. Energy-efficient.
+        </p>
+        <a href="#payment" class="inline-flex items-center space-x-2 bg-blue-800 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-900 transition">
+          <i data-feather="shopping-cart" class="w-5 h-5"></i>
+          <span>Buy Now</span>
+        </a>
+      </div>
+      <div class="md:w-1/2">
+        <img src="https://via.placeholder.com/500x300" alt="SoLight product" class="w-full rounded-xl shadow-md" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="bg-gray-100 py-16" id="benefits">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-extrabold text-blue-800 mb-12">
+        Why Choose <span class="text-yellow-400">SoLight?</span>
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div class="bg-white p-8 rounded-xl shadow-xl transition transform hover:scale-105 hover:shadow-2xl">
+          <div class="mb-6 text-yellow-400">
+            <i data-feather="sun" class="w-12 h-12 mx-auto"></i>
+          </div>
+          <h3 class="text-2xl font-semibold mb-4">Energy Efficient</h3>
+          <p class="text-gray-600">SoLight is designed to be energy-efficient, helping you save on electricity bills while reducing your carbon footprint.</p>
+        </div>
+
+        <!-- Benefit 2 -->
+        <div class="bg-white p-8 rounded-xl shadow-xl transition transform hover:scale-105 hover:shadow-2xl">
+          <div class="mb-6 text-blue-800">
+            <i data-feather="star" class="w-12 h-12 mx-auto"></i>
+          </div>
+          <h3 class="text-2xl font-semibold mb-4">Stylish Design</h3>
+          <p class="text-gray-600">Enhance the look of your space with SoLight’s sleek and modern designs, available in various styles to fit any decor.</p>
+        </div>
+
+        <!-- Benefit 3 -->
+        <div class="bg-white p-8 rounded-xl shadow-xl transition transform hover:scale-105 hover:shadow-2xl">
+          <div class="mb-6 text-green-400">
+            <i data-feather="check-circle" class="w-12 h-12 mx-auto"></i>
+          </div>
+          <h3 class="text-2xl font-semibold mb-4">Long-Lasting</h3>
+          <p class="text-gray-600">Our lights are built to last, with premium materials and advanced technology ensuring a longer lifespan than traditional bulbs.</p>
+        </div>
+
+        <!-- Benefit 4 -->
+        <div class="bg-white p-8 rounded-xl shadow-xl transition transform hover:scale-105 hover:shadow-2xl">
+          <div class="mb-6 text-purple-600">
+            <i data-feather="clock" class="w-12 h-12 mx-auto"></i>
+          </div>
+          <h3 class="text-2xl font-semibold mb-4">Time-Saving Setup</h3>
+          <p class="text-gray-600">Set up your lighting in no time with our user-friendly installation process that requires no special tools or expertise.</p>
+        </div>
+
+        <!-- Benefit 5 -->
+        <div class="bg-white p-8 rounded-xl shadow-xl transition transform hover:scale-105 hover:shadow-2xl">
+          <div class="mb-6 text-red-600">
+            <i data-feather="zap" class="w-12 h-12 mx-auto"></i>
+          </div>
+          <h3 class="text-2xl font-semibold mb-4">Fast Charging</h3>
+          <p class="text-gray-600">SoLight offers fast charging and long-lasting brightness, ensuring you get the most out of every usage.</p>
+        </div>
+
+        <!-- Benefit 6 -->
+        <div class="bg-white p-8 rounded-xl shadow-xl transition transform hover:scale-105 hover:shadow-2xl">
+          <div class="mb-6 text-indigo-600">
+            <i data-feather="cloud" class="w-12 h-12 mx-auto"></i>
+          </div>
+          <h3 class="text-2xl font-semibold mb-4">Smart Connectivity</h3>
+          <p class="text-gray-600">Control your lights remotely via mobile apps or smart home systems, making it easier than ever to adjust your lighting.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section with location and social media -->
+  <section class="bg-gradient-to-r from-blue-800 to-blue-600 py-16 text-white" id="contact">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div>
+        <h2 class="text-4xl font-extrabold text-white mb-8">Get in Touch with Us</h2>
+        <p class="text-lg mb-12">We're here to answer any questions you may have. Reach out to us, and we'll get back to you as soon as possible.</p>
+
+        <!-- Contact Form -->
+        <div class="flex justify-center">
+          <form action="#" method="POST" class="space-y-6 w-full md:w-3/4 lg:w-1/2 bg-white/50 p-8 rounded-xl shadow-lg backdrop-blur-lg">
+            <div class="flex flex-col space-y-4">
+              <div>
+                <input type="text" name="name" placeholder="Your Name" required class="w-full p-4 rounded-lg text-gray-800 placeholder-gray-500 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition" />
+              </div>
+              <div>
+                <input type="email" name="email" placeholder="Your Email" required class="w-full p-4 rounded-lg text-gray-800 placeholder-gray-500 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition" />
+              </div>
+              <div>
+                <textarea name="message" placeholder="Your Message" rows="4" required class="w-full p-4 rounded-lg text-gray-800 placeholder-gray-500 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition"></textarea>
+              </div>
+              <div>
+                <button type="submit" class="w-full bg-yellow-400 text-blue-800 px-6 py-3 rounded-full font-semibold hover:bg-yellow-500 transition">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Telephone Number (random) -->
+        <p class="text-lg mt-8">Call us: <span id="phone-number" class="font-semibold"></span></p>
+      </div>
+
+      <!-- Right side: Location with Google Map -->
+      <div class="text-center md:text-left">
+        <h3 class="text-2xl font-bold text-white mb-4">Our Location</h3>
+        <p class="text-lg text-gray-200 mb-8">Rizal Technological University, Mandaluyong City, Philippines</p>
+
+        <div class="mb-8">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.749891263473!2d121.04867131575144!3d14.590217090799203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8c53a9d0a8d%3A0x9e60c60e30b6f251!2sRizal%20Technological%20University%20Main%20Campus!5e0!3m2!1sen!2sph!4v1652424175820!5m2!1sen!2sph" 
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <div class="flex justify-center space-x-6">
+          <a href="#" class="text-xl hover:text-yellow-400">
+            <i data-feather="facebook" class="w-6 h-6"></i>
+          </a>
+          <a href="#" class="text-xl hover:text-yellow-400">
+            <i data-feather="instagram" class="w-6 h-6"></i>
+          </a>
+          <a href="#" class="text-xl hover:text-yellow-400">
+            <i data-feather="twitter" class="w-6 h-6"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Payment Section -->
+<section class="py-16 bg-gray-100" id="payment">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-extrabold text-blue-800 mb-8">Secure Payment</h2>
+    <p class="text-lg text-gray-700 mb-12">Fill out the form below to complete your purchase.</p>
+
+    <!-- Product Selection and Quantity -->
+    <div class="bg-white p-8 rounded-xl shadow-lg mb-8">
+      <h3 class="text-2xl font-semibold text-blue-800 mb-6">Select Product and Quantity</h3>
+      <form action="#" method="POST" class="space-y-6">
+        <div class="flex flex-col md:flex-row justify-between gap-6">
+          <!-- Product Selection -->
+          <div class="flex-1">
+            <label for="product" class="block text-lg font-medium text-gray-700">Product</label>
+            <select id="product" name="product" class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:outline-none">
+              <option value="so-light-1">SoLight Classic</option>
+              <option value="so-light-2">SoLight Premium</option>
+              <option value="so-light-3">SoLight Pro</option>
+            </select>
+          </div>
+          <!-- Quantity Selection -->
+          <div class="flex-1">
+            <label for="quantity" class="block text-lg font-medium text-gray-700">Quantity</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:outline-none" />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Billing Information -->
+    <div class="bg-white p-8 rounded-xl shadow-lg mb-8">
+      <h3 class="text-2xl font-semibold text-blue-800 mb-6">Billing Information</h3>
+      <form action="#" method="POST" class="space-y-6">
+        <div class="flex flex-col md:flex-row justify-between gap-6">
+          <!-- Name -->
+          <div class="flex-1">
+            <label for="name" class="block text-lg font-medium text-gray-700">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:outline-none" />
+          </div>
+          <!-- Email -->
+          <div class="flex-1">
+            <label for="email" class="block text-lg font-medium text-gray-700">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="youremail@example.com" required class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:outline-none" />
+          </div>
+        </div>
+
+        <div>
+          <label for="address" class="block text-lg font-medium text-gray-700">Shipping Address</label>
+          <input type="text" id="address" name="address" placeholder="123 Main St, City, Country" required class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:outline-none" />
+        </div>
+      </form>
+    </div>
+
+    <!-- Payment Method -->
+    <div class="bg-white p-8 rounded-xl shadow-lg mb-8">
+      <h3 class="text-2xl font-semibold text-blue-800 mb-6">Payment Method</h3>
+      <form action="#" method="POST" class="space-y-6">
+        <div class="flex flex-col md:flex-row justify-between gap-6">
+          <!-- Credit Card -->
+          <div class="flex-1">
+            <label for="card-number" class="block text-lg font-medium text-gray-700">Credit Card Number</label>
+            <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9876 5432" required class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:outline-none" />
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-between gap-6">
+          <!-- Expiry Date -->
+          <div class="flex-1">
+            <label for="expiry" class="block text-lg font-medium text-gray-700">Expiry Date</label>
+            <input type="month" id="expiry" name="expiry" required class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:outline-none" />
+          </div>
+          <!-- CVV -->
+          <div class="flex-1">
+            <label for="cvv" class="block text-lg font-medium text-gray-700">CVV</label>
+            <input type="text" id="cvv" name="cvv" placeholder="123" required class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:outline-none" />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Confirm Payment -->
+    <div class="text-center">
+      <button type="submit" class="bg-blue-800 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-900 transition">
+        Complete Payment
+      </button>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Feather Icons Script -->
+  <script>
+    feather.replace();
+  </script>
+</body>
+</html>
