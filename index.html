@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-  <title>SoLight</title>
+  <title>Brillara</title>
+
+  <link rel="icon" href="favicon.png" type="image/png" />
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -13,10 +15,11 @@
 <body>
   <nav class="bg-white shadow-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center">
-      <!-- LOGO (left) -->
-      <h1 class="text-3xl font-bold">
-        <span class="text-blue-800">So</span><span class="text-yellow-400">light</span>
-      </h1>
+    <!-- LOGO (left) -->
+    <h1 class="text-3xl font-bold">
+      <span class="text-blue-800">BRIL</span><span class="text-yellow-400">LARA</span>
+    </h1>
+
 
       <!-- NAV LINKS (right) -->
       <ul class="hidden md:flex ml-auto space-x-8 font-medium text-lg text-gray-700 items-center">
@@ -35,26 +38,28 @@
     </div>
   </nav>
 
-  <!-- Home Section -->
-  <section class="bg-gray-50 min-h-screen flex items-center" id="home">
-    <div class="max-w-7xl mx-auto px-6 flex flex-col-reverse md:flex-row items-center gap-12">
-      <div class="md:w-1/2">
-        <h2 class="text-4xl font-extrabold text-blue-800 mb-4">
-          Light Up Your Life with <span class="text-yellow-400">SoLight</span>
-        </h2>
-        <p class="text-lg text-gray-600 mb-6">
-          Discover innovative lighting solutions that brighten your space and uplift your mood. Reliable. Stylish. Energy-efficient.
-        </p>
-        <a href="#payment" class="inline-flex items-center space-x-2 bg-blue-800 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-900 transition">
-          <i data-feather="shopping-cart" class="w-5 h-5"></i>
-          <span>Buy Now</span>
-        </a>
-      </div>
-      <div class="md:w-1/2">
-        <img src="https://via.placeholder.com/500x300" alt="SoLight product" class="w-full rounded-xl shadow-md" />
-      </div>
+<!-- Home Section -->
+<section class="bg-gray-50 min-h-screen flex items-center" id="home">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col-reverse md:flex-row items-center gap-12">
+    <div class="md:w-1/2">
+      <h2 class="text-4xl font-extrabold text-blue-800 mb-4">
+        Light Up Your Life with <span class="text-yellow-400"></span>
+      </h2>
+      <img src="home.png" alt="SoLight Home" class="w-auto h-200 mb-6" />
+      <p class="text-lg text-gray-600 mb-6">
+        Discover innovative lighting solutions that brighten your space and uplift your mood. Reliable. Stylish. Energy-efficient.
+      </p>
+      <a href="#payment" class="inline-flex items-center space-x-2 bg-blue-800 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-900 transition">
+        <i data-feather="shopping-cart" class="w-5 h-5"></i>
+        <span>Buy Now</span>
+      </a>
     </div>
-  </section>
+    <div class="md:w-1/2">
+      <img src="https://via.placeholder.com/500x300" alt="SoLight product" class="w-full rounded-xl shadow-md" />
+    </div>
+  </div>
+</section>
+
 
   <!-- Benefits Section -->
   <section class="bg-gray-100 py-16" id="benefits">
@@ -67,8 +72,8 @@
           <div class="mb-6 text-yellow-400">
             <i data-feather="sun" class="w-12 h-12 mx-auto"></i>
           </div>
-          <h3 class="text-2xl font-semibold mb-4">Energy Efficient</h3>
-          <p class="text-gray-600">SoLight is designed to be energy-efficient, helping you save on electricity bills while reducing your carbon footprint.</p>
+          <h3 class="text-2xl font-semibold mb-4">Solar-Powered & Energy Efficient</h3>
+          <p class="text-gray-600">Uses solar energy for charging, cutting electricity costs and reducing carbon footprint.</p>
         </div>
 
         <!-- Benefit 2 -->
@@ -76,8 +81,8 @@
           <div class="mb-6 text-blue-800">
             <i data-feather="star" class="w-12 h-12 mx-auto"></i>
           </div>
-          <h3 class="text-2xl font-semibold mb-4">Stylish Design</h3>
-          <p class="text-gray-600">Enhance the look of your space with SoLight’s sleek and modern designs, available in various styles to fit any decor.</p>
+          <h3 class="text-2xl font-semibold mb-4">Adaptive Brightness Control</h3>
+          <p class="text-gray-600">Auto-adjusts brightness to save energy and improve visibility based on environmental conditions.</p>
         </div>
 
         <!-- Benefit 3 -->
@@ -85,8 +90,8 @@
           <div class="mb-6 text-green-400">
             <i data-feather="check-circle" class="w-12 h-12 mx-auto"></i>
           </div>
-          <h3 class="text-2xl font-semibold mb-4">Long-Lasting</h3>
-          <p class="text-gray-600">Our lights are built to last, with premium materials and advanced technology ensuring a longer lifespan than traditional bulbs.</p>
+          <h3 class="text-2xl font-semibold mb-4">Emergency SOS & Power Reserve</h3>
+          <p class="text-gray-600">Features motion-activated lighting, low-battery power saving, and SOS flashing mode for emergencies.</p>
         </div>
 
         <!-- Benefit 4 -->
@@ -94,8 +99,8 @@
           <div class="mb-6 text-purple-600">
             <i data-feather="clock" class="w-12 h-12 mx-auto"></i>
           </div>
-          <h3 class="text-2xl font-semibold mb-4">Time-Saving Setup</h3>
-          <p class="text-gray-600">Set up your lighting in no time with our user-friendly installation process that requires no special tools or expertise.</p>
+          <h3 class="text-2xl font-semibold mb-4">Long-Lasting & Weather-Resistant</h3>
+          <p class="text-gray-600">Up to 72 hours of light and built to withstand rain and typhoons, making it perfect for outdoor use.</p>
         </div>
 
         <!-- Benefit 5 -->
@@ -119,67 +124,7 @@
     </div>
   </section>
 
-  <!-- Contact Section with location and social media -->
-  <section class="bg-gradient-to-r from-blue-800 to-blue-600 py-16 text-white" id="contact">
-    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
-      <div>
-        <h2 class="text-4xl font-extrabold text-white mb-8">Get in Touch with Us</h2>
-        <p class="text-lg mb-12">We're here to answer any questions you may have. Reach out to us, and we'll get back to you as soon as possible.</p>
 
-        <!-- Contact Form -->
-        <div class="flex justify-center">
-          <form action="#" method="POST" class="space-y-6 w-full md:w-3/4 lg:w-1/2 bg-white/50 p-8 rounded-xl shadow-lg backdrop-blur-lg">
-            <div class="flex flex-col space-y-4">
-              <div>
-                <input type="text" name="name" placeholder="Your Name" required class="w-full p-4 rounded-lg text-gray-800 placeholder-gray-500 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition" />
-              </div>
-              <div>
-                <input type="email" name="email" placeholder="Your Email" required class="w-full p-4 rounded-lg text-gray-800 placeholder-gray-500 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition" />
-              </div>
-              <div>
-                <textarea name="message" placeholder="Your Message" rows="4" required class="w-full p-4 rounded-lg text-gray-800 placeholder-gray-500 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition"></textarea>
-              </div>
-              <div>
-                <button type="submit" class="w-full bg-yellow-400 text-blue-800 px-6 py-3 rounded-full font-semibold hover:bg-yellow-500 transition">Send Message</button>
-              </div>
-            </div>
-          </form>
-        </div>
-
-        <!-- Telephone Number (random) -->
-        <p class="text-lg mt-8">Call us: <span id="phone-number" class="font-semibold"></span></p>
-      </div>
-
-      <!-- Right side: Location with Google Map -->
-      <div class="text-center md:text-left">
-        <h3 class="text-2xl font-bold text-white mb-4">Our Location</h3>
-        <p class="text-lg text-gray-200 mb-8">Rizal Technological University, Mandaluyong City, Philippines</p>
-
-        <div class="mb-8">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.749891263473!2d121.04867131575144!3d14.590217090799203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8c53a9d0a8d%3A0x9e60c60e30b6f251!2sRizal%20Technological%20University%20Main%20Campus!5e0!3m2!1sen!2sph!4v1652424175820!5m2!1sen!2sph" 
-            width="100%" 
-            height="400" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy">
-          </iframe>
-        </div>
-
-        <div class="flex justify-center space-x-6">
-          <a href="#" class="text-xl hover:text-yellow-400">
-            <i data-feather="facebook" class="w-6 h-6"></i>
-          </a>
-          <a href="#" class="text-xl hover:text-yellow-400">
-            <i data-feather="instagram" class="w-6 h-6"></i>
-          </a>
-          <a href="#" class="text-xl hover:text-yellow-400">
-            <i data-feather="twitter" class="w-6 h-6"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
 
 <!-- Payment Section -->
 <section class="py-16 bg-gray-100" id="payment">
@@ -269,6 +214,106 @@
     </div>
   </div>
 </section>
+
+  <!-- Contact Section with location and social media -->
+  <section class="bg-gradient-to-r from-blue-800 to-blue-600 py-16 text-white" id="contact">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div>
+        <h2 class="text-4xl font-extrabold text-white mb-8">Get in Touch with Us</h2>
+        <p class="text-lg mb-12">We're here to answer any questions you may have. Reach out to us, and we'll get back to you as soon as possible.</p>
+
+        <!-- Contact Form -->
+        <div class="flex justify-center">
+          <form action="#" method="POST" class="space-y-6 w-full md:w-3/4 lg:w-1/2 bg-white/50 p-8 rounded-xl shadow-lg backdrop-blur-lg">
+            <div class="flex flex-col space-y-4">
+              <div>
+                <input type="text" name="name" placeholder="Your Name" required class="w-full p-4 rounded-lg text-gray-800 placeholder-gray-500 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition" />
+              </div>
+              <div>
+                <input type="email" name="email" placeholder="Your Email" required class="w-full p-4 rounded-lg text-gray-800 placeholder-gray-500 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition" />
+              </div>
+              <div>
+                <textarea name="message" placeholder="Your Message" rows="4" required class="w-full p-4 rounded-lg text-gray-800 placeholder-gray-500 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition"></textarea>
+              </div>
+              <div>
+                <button type="submit" class="w-full bg-yellow-400 text-blue-800 px-6 py-3 rounded-full font-semibold hover:bg-yellow-500 transition">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Telephone Number (random) -->
+        <p class="text-lg mt-8">Call us: <span id="phone-number" class="font-semibold"></span></p>
+      </div>
+
+      <!-- Right side: Location with Google Map -->
+      <div class="text-center md:text-left">
+        <h3 class="text-2xl font-bold text-white mb-4">Our Location</h3>
+        <p class="text-lg text-gray-200 mb-8">Rizal Technological University, Mandaluyong City, Philippines</p>
+
+        <div class="mb-8">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.749891263473!2d121.04867131575144!3d14.590217090799203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8c53a9d0a8d%3A0x9e60c60e30b6f251!2sRizal%20Technological%20University%20Main%20Campus!5e0!3m2!1sen!2sph!4v1652424175820!5m2!1sen!2sph" 
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <div class="flex justify-center space-x-6">
+          <a href="#" class="text-xl hover:text-yellow-400">
+            <i data-feather="facebook" class="w-6 h-6"></i>
+          </a>
+          <a href="#" class="text-xl hover:text-yellow-400">
+            <i data-feather="instagram" class="w-6 h-6"></i>
+          </a>
+          <a href="#" class="text-xl hover:text-yellow-400">
+            <i data-feather="twitter" class="w-6 h-6"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer Section -->
+<footer class="bg-gray-800 text-white py-6">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Company Info Column -->
+      <div>
+        <h3 class="text-lg font-semibold mb-3">About Us</h3>
+        <p class="text-gray-400">We are a team of passionate innovators working to create smarter, more efficient solutions. Our goal is to drive positive change through technology.</p>
+      </div>
+
+      <!-- Contact Info Column -->
+      <div>
+        <h3 class="text-lg font-semibold mb-3">Contact Us</h3>
+        <ul>
+          <li class="text-gray-400">Email: <a href="mailto:brillarasolight@gmail.com" class="text-blue-400 hover:underline">brillarasolight@gmail.com</a></li>
+          <li class="text-gray-400">Phone: <a href="tel:+639784561230" class="text-blue-400 hover:underline">09784561230</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Links Column -->
+      <div>
+        <h3 class="text-lg font-semibold mb-3">Follow Us</h3>
+        <ul class="flex space-x-4">
+          <li><a href="#" class="text-blue-400 hover:text-white"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#" class="text-blue-400 hover:text-white"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#" class="text-blue-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer Bottom Text -->
+    <div class="mt-8 text-center border-t border-gray-600 pt-4">
+      <p class="text-sm text-gray-400">&copy; 2025 All Rights Reserved | Brillara Solutions</p>
+    </div>
+  </div>
+</footer>
+
 
 
   <!-- Feather Icons Script -->
